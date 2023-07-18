@@ -1,0 +1,22 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OrderQueueAdmin.aspx.cs" Inherits="dummyRamen.View.OrderQueue" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Unhandled Transaction"></asp:Label>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateEditButton="true" OnRowEditing="GridView1_RowEditing">
+            </asp:GridView>
+            <asp:Label ID="Label2" runat="server" Text="Handled Transaction"></asp:Label>
+            <asp:GridView ID="GridView2" runat="server">
+            </asp:GridView>
+            <asp:Label ID="status" runat="server" Text=""></asp:Label>
+        </div>
+    </form>
+</body>
+</html>
